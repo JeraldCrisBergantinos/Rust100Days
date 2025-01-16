@@ -1,0 +1,11 @@
+# Install and setup Rust environment in Linux
+
+# Download the Rust installation script from rustup.rs (official Rust installation tool) 
+# using curl with silent, show-error, and fail flags. 
+# The script is then piped into 'sh' to execute it.
+curl https://sh.rustup.rs -sSf | sh
+
+# Load the Rust environment variables into the current shell session 
+# by sourcing the cargo environment script.
+# This allows the use of Rust-related tools (cargo, rustc, etc.) without restarting the shell.
+. "$HOME/.cargo/env"
